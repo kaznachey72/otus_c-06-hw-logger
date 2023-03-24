@@ -1,5 +1,5 @@
 task06: main.o liblogger.a 
-	gcc main.o -llogger -pthread -o task06 -rdynamic 
+	gcc main.o -L. -llogger -pthread -o task06 -rdynamic 
 
 main.o: main.c
 	gcc -g -Wall -Wextra -Wpedantic -std=c11 -c main.c -o main.o -D_GNU_SOURCE # -DTO_FILE
