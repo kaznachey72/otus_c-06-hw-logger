@@ -24,9 +24,6 @@ bool log_init_fpath(const char *path, bool is_append)
 
 bool log_init_fstream(FILE *fstream) 
 {
-    int stack_offset;
-    (void) stack_offset;
-
     if (!fstream) {
         return false; 
     }

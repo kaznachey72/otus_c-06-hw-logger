@@ -60,8 +60,7 @@ int main()
 
     pthread_barrier_destroy(&barrier);
     free(threads);
-
-    log_printf(LEVEL_ERROR, "test error message");
+    log_release();
 
     return 0;
 }
